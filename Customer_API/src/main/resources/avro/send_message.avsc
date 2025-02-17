@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "SendMsg",
+  "namespace": "com.customerapi.confluentkafka",
+  "fields": [
+    { "name": "ackId", "type": "string" },
+    { "name": "accountId", "type": "int" },
+    { "name": "mobile", "type": "long" },
+    { "name": "message", "type": "string" }
+  ]
+}
