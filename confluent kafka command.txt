@@ -1,0 +1,18 @@
+http://localhost:8080/telcom/sendmsg?username=JohnDoe&password=password123&mobile=9876543210&message=HelloWorld155
+
+
+message check commond 
+"winpty docker exec -it schema-registry kafka-avro-console-consumer \
+  --bootstrap-server broker:29092 \
+  --topic send_sms_topic \
+  --from-beginning \
+  --property schema.registry.url=http://schema-registry:8081
+"
+
+
+" winpty docker exec -it broker kafka-console-consumer --bootstrap-server broker:29092 --topic send_sms_topic --from-beginning
+"
++++++++++++++++++++++
+to describe topic " winpty docker exec -it broker kafka-topics --bootstrap-server broker:29092 --describe --topic send_sms_topic
+"
+"http://localhost:9021/clusters/" to control center kafka
